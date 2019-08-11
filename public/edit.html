@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recipe App | Edit</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Recipe Application</h1>
+            <h2 class="header__subtitle">Cook lover ? Create your recipe here</h2>
+        </div>
+    </header>
+
+    <div class="actions">
+        <div class="actions__container actions__container--spaced">
+            <a href="/index.html" class="button">Home</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <input id="recipe-title" type="text" class="title-input" placeholder="Recipe Title">   
+        <textarea id="recipe-procedure" cols="30" rows="10" class="body-input" placeholder="Enter procedure here"></textarea>
+        <h2>Ingredients</h2><br>
+        <form id="ingredient-form" action="">
+            <input type="text" class="input" name="ingredientText" placeholder="Add ingredient">
+            <button id="btn-add" class="button">Add</button>
+        </form>
+        <div id="ingredients"></div>
+        <button id="remove-recipe" class="button button--secondary">Remove Recipe</button>
+    </div>
+    <script src="/scripts/edit-bundle.js"></script>
+</body>
+</html>
